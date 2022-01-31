@@ -1,5 +1,3 @@
-package com.relinns.botpenguin.chatapp.utils
-
 import android.os.Build
 import java.io.BufferedReader
 import java.io.File
