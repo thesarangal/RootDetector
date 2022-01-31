@@ -15,7 +15,7 @@ import java.io.InputStreamReader
 class RootDetector {
 
     /**
-     * @return TRUE if Any Test for Root Detection Pass out
+     * @return TRUE if Any Test for Root Detection Pass out otherwise FALSE
      * */
     fun isDeviceRooted(): Boolean {
         return isSuperUserExists() ||
@@ -27,7 +27,7 @@ class RootDetector {
     /**
      * Check Test Keys Available
      *
-     * TRUE: Mean No Genuine OS or Using Custom OS
+     * @return TRUE Mean No Genuine OS or Using Custom OS otherwise FALSE
      * */
     private fun detectTestKeys(): Boolean {
         val buildTags = Build.TAGS
@@ -36,6 +36,8 @@ class RootDetector {
 
     /**
      * Check Binary Existence
+     * 
+     * @return TRUE if Root related binary files found otherwise FALSE
      * */
     private fun checkBinaries(): Boolean {
         return findBinary("su") || findBinary("busybox")
@@ -45,6 +47,7 @@ class RootDetector {
      * Check Directories
      *
      * @param binaryName Root Related File Name
+     * @return TRUE if Root related binary files found otherwise FALSE
      * */
     private fun findBinary(binaryName: String): Boolean {
         var found = false
@@ -82,6 +85,8 @@ class RootDetector {
 
     /**
      * Check is SuperUser.apk Exists
+     * 
+     * @returnTRUE if Superuser app file found otherwise FALSE
      * */
     private fun isSuperUserExists(): Boolean {
         val file = File("/system/app/Superuser.apk")
@@ -90,6 +95,7 @@ class RootDetector {
 
     /**
      * Checking for SU
+     *
      * @return TRUE if SU exists
      */
     private fun checkSuExists(): Boolean {
