@@ -36,4 +36,4 @@ please open an issue on the [GitHub repository](https://github.com/thesarangal/R
 
 ## License
 
-The Root Detector library is released under the [MIT License](https://opensource.org/licenses/MIT).
+This library is released under the [MIT License](https://opensource.org/licenses/MIT).
