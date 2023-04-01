@@ -31,7 +31,7 @@ The Root Detector library uses the following techniques to detect root access on
 
 ## Contributions
 
-Contributions to the Root Detector library are welcome. If you find a bug or have a feature request,
+Contributions to this library are welcome. If you find a bug or have a feature request,
 please open an issue on the [GitHub repository](https://github.com/thesarangal/RootDetector).
 
 ## License
